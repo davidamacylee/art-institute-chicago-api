@@ -1,0 +1,122 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1 {
+    background-color: blueviolet;
+    font-size: 5em;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 70%;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: midnightblue;
+    font-weight: 300;
+    line-height: 1.6;
+    background-image: url(https://t4.ftcdn.net/jpg/05/75/71/17/360_F_575711794_3xLTBq8CFCkzqGUzzO3GacvIug2fCNZe.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+figcaption {
+    background-color: #AA98A9;
+    text-align: right;
+    width: 30%;
+}
+
+img {
+    width: 100px;
+    height: 100%;
+    /* z-index: 1; */
+}
+
+.gallery__img {
+    width: 30%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 5px;
+    background-color: #AA98A9;
+    transition: background-color 2s ease;
+}
+
+.gallery__img:hover {
+    background-color: purple;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery__item--4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.popup {
+    position: absolute;
+    z-index: 9;
+    background-color: purple;
+    color: white;
+    margin-left: 35%;
+}
